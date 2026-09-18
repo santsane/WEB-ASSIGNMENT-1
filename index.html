@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- linking so the css style applies -->
+        <link rel="stylesheet" href="style.css">
+        <title>My First Webpage</title>
+    </head>
+    <body>
+        <header>
+            <h1>Sanjar Jünis</h1>
+            <h2>Web-Technologies (Frontend)</h2>
+        </header>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#about">About Myself</a></li>
+                <li><a href="#schedule">Class Schedule</a></li>
+                <li><a href="#hobbies">Personal Hobbies</a></li>
+                <li><a href="#websites">Favorite Websites</a></li>
+                <li><a href="#mood">Current Mood</a></li>
+                <li><a href="#form">Decorative Form</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="btn">Click Me</button>
+        <main>
+            <section id="about" class="content-section">
+                <h2>About Myself</h2>
+                <h3>Personal Bio</h3>
+                <p>I'm Sanjar Jünis.</p>
+                <p>18 years old, born and raised in Astana.</p>
+                <p>As of now studying for my Bachelor's at Astana IT University as a Software Engineering major.</p>
+                <img src="images/photo.webp" alt="A selfie of me" class="profile-photo">
+            </section>
+            <section id="schedule" class="content-section">
+                <!-- class schedule table -->
+                <h2>Class Schedule</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14:00</td>
+                            <td>Operating Systems</td>
+                            <td>Qazaq</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td>Operating Systems</td>
+                            <td>Qazaq</td>
+                            <td>Software Design Patterns</td>
+                            <td></td>
+                            <td></td>
+                            <td>Algorithm Design & Analysis (Lecture)</td>
+                        </tr>
+                        <tr>
+                            <td>16:00</td>
+                            <td>Web-Technologies I</td>
+                            <td>Algorithm Design & Analysis</td>
+                            <td>Software Design Patterns</td>
+                            <td></td>
+                            <td>Software Design Patterns</td>
+                            <td>Algorithm Design & Analysis (Lecture)</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>Web-Technologies I</td>
+                            <td>Algorithm Design & Analysis</td>
+                            <td></td>
+                            <td></td>
+                            <td>Algorithm Design & Analysis</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18:00</td>
+                            <td></td>
+                            <td></td>
+                            <td>Operating Systems</td>
+                            <td>Software Design Patterns (Lecture)</td>
+                            <td>Web-Technologies I</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Software Design Patterns (Lecture)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="hobbies" class="content-section">
+                <h2>Personal Hobbies</h2>
+                <ol>
+                    <li>
+                        <strong>Listening to Music</strong>
+                        <p>My most streamed artist recently has been Jai Paul.</p>
+                    </li>
+                    <li>
+                        <strong>Watching Films</strong>
+                        <p>When The Batman Part II (2028) comes out, I'll be there.</p>
+                    </li>
+                    <li>
+                        <strong>Playing Video Games</strong>
+                        <p>I was playing through Red Dead Redemption a week ago, but stopped due to college workload.</p>
+                    </li>
+                </ol>
+            </section>
+            <section id="websites" class="content-section">
+                <h2>Favorite Websites</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                        <p>I was raised by videos and channels on YouTube.</p>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/" target="_blank">Discord</a>
+                        <p>Using it to keep in touch with people.</p>
+                    </li>
+                    <li>
+                        <a href="https://calendar.google.com/" target="_blank">Google Calendar</a>
+                        <p>Pretty useful for scheduling weeks.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="mood" class="content-section">
+                <h2>Current Mood</h2>
+                <p>I'm kind of overwhelmed by assignment work 😭, but I've got caffeine ☕, and sleep deprivation 🤕</p>
+            </section>
+            <section id="form" class="content-section">
+                <h2>Decorative Form</h2>
+                <form action="#">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Full Name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="username@email.com">
+                    </div>
+                    <div>
+                        <label for="favcolor">Favorite Color</label>
+                        <input type="color" id="favcolor" name="favcolor" value="#2171B5">
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Sanjar Jünis (2026). Assignment I for Web-Technologies I.</p>
+        </footer>
+    </body>
+</html>

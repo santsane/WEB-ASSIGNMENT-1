@@ -1,0 +1,213 @@
+/* dark mode, blue color palette, and tahoma font */
+
+body {
+    background-color: #101623;
+    color: #dce3ef;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+a {
+    color: #7fb3e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* focus visible for accessibility on links buttons and inputs */
+a:focus, button:focus, input:focus {
+    outline: 2px solid #7fb3e6;
+    outline-offset: 2px;
+}
+
+header {
+    background-color: #14243d;
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 2px solid #2171b5;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+header h2 {
+    font-weight: normal;
+    color: #7fb3e6;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* class selector used on the nav so it could be reused elsewhere too */
+.site-nav {
+    background-color: #18233a;
+    padding: 10px;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* descendant selector only links inside .site-nav get this style */
+.site-nav a {
+    padding: 6px 10px;
+    font-size: 15px;
+}
+
+/* class selector reused on both buttons on the page */
+.btn {
+    background-color: #2171b5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1a5a92;
+}
+
+button.btn {
+    display: block;
+    margin: 15px auto;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* class selector reused on every section */
+.content-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2a3a54;
+}
+
+/* descendant selector only headings inside a content section */
+.content-section h2 {
+    color: #7fb3e6;
+    text-align: left;
+}
+
+.content-section h3 {
+    color: #a9cdf0;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+/* ID selector the about section only */
+#about {
+    text-align: left;
+}
+
+/* class selector for the photo */
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-top: 10px;
+    border: 3px solid #2171b5;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #2a3a54;
+    padding: 6px;
+    text-align: center;
+}
+
+thead {
+    background-color: #1a5a92;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #18233a;
+}
+
+/* ID selector for hobbies list */
+#hobbies li {
+    color: #a9cdf0;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+#hobbies p {
+    color: #b8c2d3;
+    margin: 4px 0 0 0;
+}
+
+/* descendant selector only paragraphs inside the websites list */
+#websites li p {
+    color: #b8c2d3;
+    margin: 6px 0 0 0;
+}
+
+#websites a {
+    font-weight: bold;
+}
+
+#mood {
+    text-align: center;
+}
+
+#mood p {
+    font-size: 17px;
+}
+
+#form label {
+    display: block;
+    margin-bottom: 3px;
+    color: #a9cdf0;
+}
+
+#form div {
+    margin-bottom: 12px;
+}
+
+#form input {
+    font-family: Tahoma, sans-serif;
+    padding: 5px;
+    background-color: #18233a;
+    border: 1px solid #2a3a54;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #7c8aa3;
+    font-size: 13px;
+}
